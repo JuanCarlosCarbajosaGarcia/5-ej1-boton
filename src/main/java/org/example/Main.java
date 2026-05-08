@@ -159,7 +159,6 @@ public class Main extends Application {
         Button button5 = new Button("Boton_5");
 
         BorderPane borderPane = new BorderPane();
-        Scene scene = new Scene(borderPane,200,200);
 
         borderPane.setCenter(button1);
         borderPane.setTop(button2);
@@ -167,11 +166,34 @@ public class Main extends Application {
         borderPane.setLeft(button4);
         borderPane.setRight(button5);
 
+        Scene scene = new Scene(borderPane,200,200);
+
         ej_6.setTitle("Ejercicio 6");
         ej_6.setScene(scene);
         ej_6.show();
     }
-    public void ejercicio_7(){}
+    public void ejercicio_7(){
+        Stage ej_7 = new Stage();
+        Button button1 = new Button("Boton_1");
+        Button button2 = new Button("Boton_2");
+        Button button3 = new Button("Boton_3");
+        Button button4 = new Button("Boton_4");
+
+        GridPane gridPane = new GridPane();
+        gridPane.setHgap(10);
+        gridPane.setVgap(10);
+
+        gridPane.add(button1,0,0);
+        gridPane.add(button2,0,1);
+        gridPane.add(button3,1,0);
+        gridPane.add(button4,1,1);
+
+        Scene scene = new Scene(gridPane,300,200);
+
+        ej_7.setTitle("Ejercicio 7");
+        ej_7.setScene(scene);
+        ej_7.show();
+    }
     public void ejercicio_8(){}
     public void ejercicio_9(){}
     public void ejercicio_10(){}
